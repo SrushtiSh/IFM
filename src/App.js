@@ -8,12 +8,18 @@ import Service from "./components/Service";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Signup from "./components/Signup";
+import BrandReg from "./components/BrandReg";
+
+
+
 
 
 
 export default function App() {
   return (
     <div className="App">
+      
+      
         <Router>
             <Navbar/>
             <Routes>
@@ -21,12 +27,19 @@ export default function App() {
                 <Route path="/service" element={<Service/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/contact" element={<Contact/>}/> 
-                <Route path="/signup" element={<Signup/>}/> 
+                <Route path="/signup" element={<Signup/>}/>
+                <Route path ="/BrandReg" element={<BrandReg/>}/>
+               
 
             </Routes>
+            
        </Router>
+       
+       
+       
      
     </div>
+    
   );
 }
 
