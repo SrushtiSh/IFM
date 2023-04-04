@@ -10,6 +10,7 @@ function Signup()
      
       navigate('/BrandReg');
     };
+    
     const Influencer = () => {
       
       navigate('/InfluencerReg');

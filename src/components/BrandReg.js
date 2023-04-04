@@ -1,4 +1,7 @@
+
 import React, { useState } from 'react';
+import"../components/styles/Brand.css";
+
 
 function BrandReg() {
   const [email, setEmail] = useState('');
@@ -10,62 +13,77 @@ function BrandReg() {
     // Send signup data to backend or handle it here
   }
 
-  const styles = `
-    .brand-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 2rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      background-color: #fff;
-      border-radius: 4px;
-    }
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-
-    label {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    input {
-      font-size: 1.2rem;
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #fff;
-      box-shadow: none;
-    }
-
-    button {
-      font-size: 1.2rem;
-      padding: 0.5rem 1.5rem;
-      background-color: #0077ff;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      box-shadow: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0066cc;
-    }
-  `;
 
   return (
     <>
-      <style>{styles}</style>
+      
       <form onSubmit={handleSubmit} className="brand-form">
+      <div className="form-group">
+          <label htmlFor="Name">Your Name</label>
+          <input
+            type="text"
+            id="your_name"
+            
+            onChange={(event) => setEmail(event.target.value)}
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="Brand Name">Brand Name</label>
+          <input
+            type="text"
+            id="brand_name"
+            
+            onChange={(event) => setEmail(event.target.value)}
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="Job Title">Your Job Title</label>
+          <input
+            type="text"
+            id="job_title"
+            
+            onChange={(event) => setEmail(event.target.value)}
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="Brand Category">Brand Category</label>
+          <input
+            type="text"
+            id="brand_category"
+            placeholder="Ex.Personal Care"
+            
+            onChange={(event) => setEmail(event.target.value)}
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="Location">Location</label>
+          <input
+            type="text"
+            id="Location"
+            
+            
+            onChange={(event) => setEmail(event.target.value)}
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="Phone">Contact Number</label>
+          <input
+            type="text"
+            pattern="[0-9]*"
+            id="phone"
+            
+            
+            
+            onChange={(event) => setEmail(event.target.value)}
+          />
+        </div>
+
         <div className="form-group">
           <label htmlFor="email">Email</label>
           <input
@@ -76,7 +94,7 @@ function BrandReg() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Set Password</label>
           <input
             type="password"
             id="password"

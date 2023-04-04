@@ -9,6 +9,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Signup from "./components/Signup";
 import BrandReg from "./components/BrandReg";
+import InfluencerReg from "./components/InfluencerReg";
 
 
 
@@ -29,6 +30,7 @@ export default function App() {
                 <Route path="/contact" element={<Contact/>}/> 
                 <Route path="/signup" element={<Signup/>}/>
                 <Route path ="/BrandReg" element={<BrandReg/>}/>
+                <Route path ="/InfluencerReg" element={<InfluencerReg/>}/>
                
 
             </Routes>
